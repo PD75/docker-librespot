@@ -1,5 +1,5 @@
 # Librespot Docker
-**v 0.1.3**
+**v 0.3.1**
 
 This container contains [librespot](https://github.com/librespot-org/librespot) which is a headless Spotify daemon. It can be controlled from any spotify client as other spotify compatible devices through Spotify Connect.
 
