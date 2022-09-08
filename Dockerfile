@@ -1,12 +1,12 @@
-FROM rust:1.60 AS librespot
-#1.60/latest
+FROM rust:1.63 AS librespot
+#1.63/latest
 
 
 RUN apt-get update \
     && apt-get -y install build-essential libasound2-dev pkg-config curl unzip \
     && apt-get clean && rm -fR /var/lib/apt/lists
 
-ARG LIBRESPOTVERSION=0.3.1
+ARG LIBRESPOTVERSION=0.4.2
 RUN cd /tmp \
     && wget 'https://github.com/librespot-org/librespot/archive/refs/tags/v'$LIBRESPOTVERSION'.zip' \
     && unzip 'v'$LIBRESPOTVERSION'.zip' \
